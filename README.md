@@ -59,14 +59,6 @@ python -m http.server 8000
 
 Y abre <http://localhost:8000>. Hace falta un servidor: abriendo `index.html` directamente, el navegador bloquea la carga de las lecciones.
 
-## Publicar en GitHub Pages y activar Colab
-
-1. Sube el repositorio a GitHub.
-2. Pon tu usuario en `config.json` (`github_user`) y ejecuta `python build.py`. Esto actualiza los enlaces de Colab que llevan dentro los notebooks.
-3. En GitHub: *Settings → Pages → Build and deployment → Deploy from a branch*, rama `main`, carpeta `/ (root)`.
-
-La web detecta automáticamente el usuario y el repositorio cuando se sirve desde `usuario.github.io/repositorio`, así que sus botones de Colab funcionan aunque olvides el paso 2. Los notebooks sí lo necesitan.
-
 ## Créditos
 
 - [NumPy tutorials](https://github.com/numpy/numpy-tutorials) (licencia BSD-3): los proyectos de la ley de Moore y de fractales están basados en sus tutoriales, y el CSV de transistores se descarga de ese repositorio.
