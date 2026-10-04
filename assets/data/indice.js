@@ -1,4 +1,4 @@
-window.CONFIG = {"github_user": "TU_USUARIO_GITHUB", "github_repo": "Numpy_Tutorials", "branch": "main", "colab_base": "https://colab.research.google.com/github/TU_USUARIO_GITHUB/Numpy_Tutorials/blob/main/notebooks/"};
+window.CONFIG = {"github_user": "Sergiibut05", "github_repo": "Numpy_Tutorials", "branch": "main", "colab_base": "https://colab.research.google.com/github/Sergiibut05/Numpy_Tutorials/blob/main/notebooks/"};
 window.INDICE = [
  {
   "slug": "01-por-que-numpy",
