@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NumPy desde cero · Curso gratuito en español</title>
+  <meta name="description" content="Curso de NumPy en español para quien solo sabe Python básico. 15 lecciones con ejercicios, código ejecutable en el navegador y notebooks para Google Colab.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body class="pagina-inicio">
+  <a class="saltar" href="#recorrido">Saltar al temario</a>
+
+  <header class="barra">
+    <a class="marca" href="./" aria-label="NumPy desde cero, inicio">
+      <span class="marca-icono" aria-hidden="true"></span>
+      NumPy desde cero
+    </a>
+    <nav class="barra-nav" aria-label="Principal">
+      <a href="#recorrido">Temario</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#fuentes">Fuentes</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-texto">
+        <h1>Aprende NumPy pensando en rejillas de números.</h1>
+        <p class="hero-lead">Un curso en español para quien sabe algo de Python y nada de NumPy. Cada lección se lee aquí, se ejecuta en el navegador y se abre como notebook en Google Colab.</p>
+        <div class="hero-acciones">
+          <a class="boton boton-principal" id="boton-empezar" href="leccion.html?l=01-por-que-numpy">Empezar por la lección 1</a>
+          <a class="boton boton-secundario" href="#recorrido">Ver el temario</a>
+        </div>
+        <p class="hero-progreso" id="hero-progreso" hidden></p>
+      </div>
+
+      <figure class="demo" aria-labelledby="demo-titulo">
+        <figcaption id="demo-titulo" class="demo-titulo">Pulsa una expresión y mira qué elementos selecciona.</figcaption>
+        <pre class="demo-def"><code>a = np.arange(1, 31).reshape(5, 6)</code></pre>
+        <div class="demo-expresiones" role="group" aria-label="Expresiones de indexado" id="demo-expresiones"></div>
+        <div class="demo-rejilla-envoltorio">
+          <span class="demo-eje demo-eje-0" aria-hidden="true">eje 0 ↓</span>
+          <span class="demo-eje demo-eje-1" aria-hidden="true">eje 1 →</span>
+          <div class="demo-rejilla" id="demo-rejilla" aria-hidden="true"></div>
+        </div>
+        <output class="demo-resultado" id="demo-resultado" aria-live="polite"></output>
+      </figure>
+    </section>
+
+    <section class="seccion" id="recorrido" aria-labelledby="recorrido-titulo">
+      <div class="seccion-cabecera">
+        <h2 id="recorrido-titulo">El temario</h2>
+        <p>Quince lecciones en orden. Las doce primeras enseñan una herramienta cada una; las tres últimas son proyectos que las combinan. Cuenta con unas 8 horas en total, ejercicios incluidos.</p>
+      </div>
+      <div id="temario" class="temario"></div>
+    </section>
+
+    <section class="seccion" id="como-funciona" aria-labelledby="como-titulo">
+      <div class="seccion-cabecera">
+        <h2 id="como-titulo">Cómo funciona</h2>
+      </div>
+      <div class="modos">
+        <div class="modo">
+          <h3>Lee y ejecuta aquí</h3>
+          <p>Cada bloque de código muestra su resultado. Con el botón <strong>Ejecutar</strong> se ejecuta de verdad en tu navegador: puedes cambiarlo y ver qué pasa. La primera vez tarda unos segundos en cargar Python.</p>
+        </div>
+        <div class="modo">
+          <h3>Abre el notebook en Colab</h3>
+          <p>Cada lección tiene su notebook. En <a href="https://colab.research.google.com/" rel="noopener">Google Colab</a> se ejecuta sin instalar nada, solo necesitas una cuenta de Google. Guarda una copia en tu Drive para no perder tus cambios.</p>
+        </div>
+        <div class="modo">
+          <h3>Haz los ejercicios</h3>
+          <p>Cada lección termina con ejercicios. Intenta resolverlos antes de mirar la solución: es donde de verdad se aprende. Marca la lección como completada y la web recordará por dónde vas.</p>
+        </div>
+      </div>
+      <div class="requisitos">
+        <h3>Qué necesitas saber antes</h3>
+        <p>Variables, listas, bucles <code>for</code>, funciones e <code>if</code> en Python. Nada de matemáticas avanzadas: cuando aparezcan (vectores, logaritmos, números complejos) se explican sobre la marcha. Si conoces ideas de Big Data como la notación Big O o las 5 V, verás que salen a menudo.</p>
+      </div>
+    </section>
+
+    <section class="seccion" id="fuentes" aria-labelledby="fuentes-titulo">
+      <div class="seccion-cabecera">
+        <h2 id="fuentes-titulo">Fuentes y lecturas recomendadas</h2>
+        <p>Este curso se apoya en material abierto de la comunidad. Cuando termines, estos son los mejores sitios para seguir.</p>
+      </div>
+      <ul class="fuentes">
+        <li><a href="https://numpy.org/numpy-tutorials/" rel="noopener">NumPy tutorials</a>: los tutoriales oficiales del proyecto NumPy. Los proyectos de la ley de Moore y de fractales están basados en ellos, y el CSV de transistores procede de allí.</li>
+        <li><a href="https://numpy.org/doc/stable/user/absolute_beginners.html" rel="noopener">NumPy: the absolute basics for beginners</a>: la guía oficial para principiantes.</li>
+        <li><a href="https://github.com/rougier/numpy-100" rel="noopener">100 NumPy exercises</a>, de Nicolas Rougier: cien ejercicios graduados para practicar.</li>
+        <li><a href="https://www.labri.fr/perso/nrougier/from-python-to-numpy/" rel="noopener">From Python to NumPy</a>, también de Rougier: un libro gratuito sobre vectorización a fondo.</li>
+        <li><a href="https://jakevdp.github.io/PythonDataScienceHandbook/" rel="noopener">Python Data Science Handbook</a>, de Jake VanderPlas: el capítulo 2 es una referencia excelente de NumPy.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Material educativo libre. El código de los ejemplos puede usarse sin restricciones.</p>
+    <p id="pie-repo"></p>
+  </footer>
+
+  <script src="assets/data/indice.js"></script>
+  <script src="assets/js/comun.js"></script>
+  <script src="assets/js/inicio.js"></script>
+</body>
+</html>
